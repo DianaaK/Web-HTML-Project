@@ -38,8 +38,8 @@
         <div id="dropdownAcc">
             <button class="dropbtn">Contul meu</button>
             <div class="dropdown-content">
-                <button class="btn" onclick="getPage('id_autentificare')">Autentificare</button>
-                <button class="btn" onclick="getPage('id_inregistrare')">Inregistrare</button>
+                <button id="btn_autentificare" class="btn" onclick="getPage('id_autentificare')">Autentificare</button>
+                <button id="btn_inregistrare" class="btn" onclick="getPage('id_inregistrare')">Inregistrare</button>
             </div>
         </div>
     </div>
@@ -137,13 +137,13 @@
             <div class="card">
                 <h2 class="articleheader">Autentificare</h2>
                 <form>
-                    <label for="email">Email:<span class="obligatoriu">*</span></label>
-                    <input id="email" type="text" required="required" maxlength="40" name="email" placeholder="email">
+                    <label for="emailLogin">Email:<span class="obligatoriu">*</span></label>
+                    <input id="emailLogin" type="text" required="required" maxlength="40" name="email" placeholder="email">
 
-                    <label for="password">Parola:<span class="obligatoriu">*</span></label>
-                    <input id="password" type="password" required="required" name="password" placeholder="parola">
+                    <label for="passwordLogin">Parola:<span class="obligatoriu">*</span></label>
+                    <input id="passwordLogin" type="password" required="required" name="password" placeholder="parola">
 
-                    <input type="submit" value="Autentificare">
+                    <input id="loginButton" type="submit" value="Autentificare">
                 </form>
                 <p class="articletext"> Nu ai cont? Click <span class="redirectAcc" onclick="getPage('id_inregistrare')"> aici </span> pentru inregistrare. </p>
 
@@ -221,7 +221,7 @@
         <div class="leftcolumn" id="id_userpage">
             <div class=card>
                 <h2 class="articleheader">Contul meu</h2>
-                <p>Bine ai venit!</p>
+                <p>Bine ai venit <span id=currentUser style="font-weight: bold;"></span>!</p>
             </div>
             <div class=card>
                 <h3 class="articleheader">Setari</h3>
@@ -368,9 +368,10 @@
     <script src="script/GridComponent.js"></script>
     <script src="script/TileComponent.js"></script>
     <script src="script/RegisterFormValidation.js"></script>
+    <script src="script/LoginForm.js"></script>
 
     <script src="script/UserSettings.js"></script>
-    <script src="script/CarouselComponent.js"></script>
+    <script src="script/Carousel.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.4/randomColor.js" integrity="sha256-M2r6Q8LKhLE3OlvaHmi69IDLEKSBQ+RQuILS9bNStFY=" crossorigin="anonymous"></script>
