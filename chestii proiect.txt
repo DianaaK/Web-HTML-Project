@@ -1,0 +1,22 @@
+obiecte - in componente
+array cu metode - tot componente
+
++ ajax
+
+evenimente click si taste - carousel
+	carusel -> setinterval (set timeout cand intervine cnv) SAU pt server
+
+sortare anunturi
+
+- pt un anunt - carusel + taste apasate
+
+- librarie npm -> random smth generator (maybe poza profil - culoare)
+
+user page: preferinte(dark theme mb), contact
+
+buton dr sus -> logged in sau nu -> bine ai venit etc etc + log out (in loc de reigster/autentificare)
+
+-de facut class pt anunturi(tile comp) - array de obj, date=date+location, sort by date(string to date)/title
+mb search - city(*)
+
+* adauga/sterge anunt

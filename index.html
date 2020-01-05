@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/style_general.css">
+    <link rel="stylesheet" type="text/css" href="styles/style_media.css">
+    <link rel="stylesheet" type="text/css" href="styles/style_animatii.css">
+    <link rel="stylesheet" type="text/css" href="styles/style_form.css">
+    <link rel="stylesheet" type="text/css" href="styles/style_grid.css">
+    <link rel="stylesheet" type="text/css" href="styles/style_carousel.css">
+
+
+    <link rel="shortcut icon" href="favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon-16x16.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+</head>
+
+<body onload="getPage()" onhashchange="getPage()">
+
+    <div id="navbar">
+        <div id=logo>
+            <button class="btn" onclick="getPage('id_acasa')"><img src="images/logo.jpg" alt="logo"></button>
+        </div>
+        <button class="btn" onclick="getPage('id_acasa')">Acasa</button>
+        <button class="btn" onclick="getPage('id_despre-noi')">Despre noi</button>
+        <div id="dropdown">
+            <button class="dropbtn">Anunturi adoptii</button>
+            <div class="dropdown-content">
+                <button class="btn" onclick="getPage('id_adoptii-pisici')">Adoptii pisici</button>
+                <button class="btn" onclick="getPage('id_adoptii-caini')">Adoptii caini</button>
+                <button class="btn" onclick="getPage('id_alte-anunturi')">Alte anuturi</button>
+            </div>
+        </div>
+        <button class="btn" onclick="getPage('id_donatii')">Donatii</button>
+        <button class="btn" onclick="getPage('id_contact')">Contact</button>
+
+        <div id="dropdownAcc">
+            <button class="dropbtn">Contul meu</button>
+            <div class="dropdown-content">
+                <button class="btn" onclick="getPage('id_autentificare')">Autentificare</button>
+                <button class="btn" onclick="getPage('id_inregistrare')">Inregistrare</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="header">
+        <img id=banner src="images/banner.jpg" alt="banner">
+        <div class="headertext">
+            <h1>AdoptDon'tShop</h1>
+            <p> - platforma de adoptii si fundraising - </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn" id="id_acasa">
+        </div>
+
+        <div class="leftcolumn" id="id_despre-noi">
+            <div class="card">
+                <h2 class="articleheader">Despre noi</h2>
+                <p class="articletext">
+                    Asociatia s-a nascut din iubirea noastra pentru animale si din dorinta de a ajuta cat mai multe dintre ele, fie cautandu-le familii iubitoare, fie prin sprijin financiar.
+                </p>
+                <p class="articletext">Cand am inceput proiectul AdoptDon'tShop nu stiam la ce sa ne asteptam. Tot ce ne-am dorit a fost sa dam animalutele pe care le-am salvat de pe strada spre adoptie. Sa le gasim niste familii primitoare, care sa aiba grija de ele, asa cum
+                    merita. Ulterior, am inceput sa ajutam si alte persoane aflate in aceeasi situatie, facand legatura intre cei ce aveau nevoie de ajutor si cei ce voiau sa ajute.
+                </p>
+                <p class="articletext">
+                    Si ne-am descurcat destul de bine la acest capitol. Cat de bine? Sute de animalute si-au gasit stapan prin intermediul paginilor noastre. De asemenea, fiecare animalut care ne trece pragul este:
+                </p>
+                <ol id="lista">
+                    <li>Examinat de un veterinar</li>
+                    <li>Vaccinat</li>
+                    <li>Sterilizat</li>
+                </ol>
+                <p class="articletext">
+                    De-a lungul timpului, am descoperit si stapani iubitori care din pacate nu isi puteau permite sa plateasca tramatentele pentru animalele de companie. Noi am decis sa le facem publice povestile, ajutandu-i sa stranga sumele necesare.
+                </p>
+
+                <div id="video">
+                    <video controls>
+                        <source src="video/kittens_puppies.mp4" type="video/mp4">
+                        <source src="video/kittens_puppies.ogg" type="video/ogg">
+                      Your browser does not support the video tag.
+                      </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="leftcolumn" id="id_adoptii-caini">
+        </div>
+
+        <div class="leftcolumn" id="id_adoptii-pisici">
+        </div>
+
+        <div class="leftcolumn" id="id_alte-anunturi">
+            <div class="card">
+                <h2 class="articleheader">Alte anunturi</h2>
+                <p class="articletext">Din pacate inca nu exista anunturi in aceasta categorie. Daca vrei sa adaugi unul contacteaza-ne pe mail sau <a class="link" href="contact.html">aici</a>.
+                </p>
+            </div>
+            <div id="container1">
+                <img id="animation1" src="images/animation1.gif" alt="animatie">
+                <div id="animation11"></div>
+            </div>
+        </div>
+
+        <div class="leftcolumn" id="id_donatii">
+        </div>
+
+        <div class="leftcolumn" id="id_contact">
+            <div class="card">
+                <h2 class="articleheader">Contacteaza-ne</h2>
+                <p class="articletext">Ai o intrebare pentru noi? Vrei sa ne faci o recomandare, sa donezi sau ai nevoie de ajutor? Te rugam sa ne contactezi prin e-mail la adoptdontshop@miau.com sau sa completezi formularul de mai jos si iti vom raspunde in scurt timp. </p>
+                <form>
+                    <label for="nume">Numele tau <span class="obligatoriu">*</span></label>
+                    <input id="nume" type="text" required="required" maxlength="40" name="nume" placeholder="Numele tau">
+
+                    <label for="email">Emailul tau <span class="obligatoriu">*</span></label>
+                    <input id="email" type="email" required="required" name="email" placeholder="Emailul tau">
+
+                    <label for="telefon">Telefon </label>
+                    <input id="telefon" type="tel" name="telefon" placeholder="Numar telefon" />
+
+                    <label for="subiect">Subiect <span class="obligatoriu">*</span></label>
+                    <input id="subiect" type="text" required="required" name="subiect" placeholder="Subiect">
+
+                    <label for="mesaj">Mesajul tau <span class="obligatoriu">*</span></label>
+                    <textarea id="mesaj" required="required" name="mesaj" placeholder="Scrie-ne ceva!"></textarea>
+
+                    <input type="submit" value="Trimite">
+                </form>
+            </div>
+        </div>
+
+        <div class="leftcolumn" id="id_autentificare">
+            <div class="card">
+                <h2 class="articleheader">Autentificare</h2>
+                <form>
+                    <label for="email">Email:<span class="obligatoriu">*</span></label>
+                    <input id="email" type="text" required="required" maxlength="40" name="email" placeholder="email">
+
+                    <label for="password">Parola:<span class="obligatoriu">*</span></label>
+                    <input id="password" type="password" required="required" name="password" placeholder="parola">
+
+                    <input type="submit" value="Autentificare">
+                </form>
+                <p class="articletext"> Nu ai cont? Click <span class="redirectAcc" onclick="getPage('id_inregistrare')"> aici </span> pentru inregistrare. </p>
+
+            </div>
+        </div>
+
+        <div class="leftcolumn" id="id_inregistrare">
+            <div class="card">
+                <h2 class="articleheader">Inregistrare</h2>
+                <form id="registerForm">
+                    <label for="registerSurname">Nume:<span class="obligatoriu">*</span></label>
+                    <input id="registerSurname" type="text" name="nume" placeholder="nume" required="required">
+
+                    <label for="registerName">Prenume:<span class="obligatoriu">*</span></label>
+                    <input id="registerName" type="text" name="prenume" placeholder="prenume" required="required">
+
+                    <label for="registerEmail">Email:<span class="obligatoriu">*</span></label>
+                    <input id="registerEmail" type="text" name="email" placeholder="email" required="required">
+
+                    <label for="registerPassword">Parola:<span class="obligatoriu">*</span></label>
+                    <input id="registerPassword" type="password" name="parola" placeholder="parola" required="required">
+
+                    <div id="passOverlay">
+                        <p>Parola trebuie sa contina:</p>
+                        <ul>
+                            <li>minim 8 caractere.</li>
+                            <li>cel putin o cifra</li>
+                            <li>cel putin o litera mica</li>
+                            <li>cel putin o litera mare</li>
+                            <li>cel putin un caracter special</li>
+                        </ul>
+                    </div>
+
+                    <label for="registerPasswordRe">Reintroduceti parola:<span class="obligatoriu">*</span></label>
+                    <input id="registerPasswordRe" type="password" name="parola" placeholder="reintroduceti parola" required="required">
+
+                    <label>Sex:</label><br/>
+                    <input type="radio" name="gender" id="male" value="Masculin">
+                    <label for="male">Masculin</label>
+                    <input type="radio" name="gender" id="female" value="Feminin">
+                    <label for="female">Feminin</label>
+                    <input type="radio" name="gender" id="other" value="Altul">
+                    <label for="other">Altul</label>
+                    <br/>
+
+                    <label>Varsta:</label><br/>
+                    <input type="range" min=1 max=100 value=30 oninput="chestie(this.value, document.getElementById('rangeOutput'))" )>
+                    <label id="rangeOutput">30</label>
+                    <br/>
+
+                    <label>Tara:</label>
+                    <select>
+                        <option value="" selected disabled hidden>Alegeti tara</option>
+                            <option>Romania</option>
+                            <option>Germania</option>
+                            <option>Franta</option>
+                    </select>
+                    <br/>
+
+                    <input id="submitButton" type="submit" value="Inregistrare">
+
+                    <br/>
+                    <input type="checkbox" id="checkInput" required="required">
+                    <label for="checkInput" id="checkLabel">Sunt de acord cu termenii si conditiile<span class="obligatoriu">*</span></label>
+                    <br/><br/>
+
+                </form>
+                <p class="articletext"> Ai deja cont? Click <span class="redirectAcc" onclick="getPage('id_autentificare')"> aici </span> pentru autentificare. </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="leftcolumn" id="id_userpage">
+            <div class=card>
+                <h2 class="articleheader">Contul meu</h2>
+                <p>Bine ai venit!</p>
+            </div>
+            <div class=card>
+                <h3 class="articleheader">Setari</h3>
+                <p class="articletext"> Alege dimensiune scris:</p>
+                <select id="textFontOption">
+                    <option value="mediu">Standard</option>
+                        <option value="mic">Mic</option>
+                        <option value="mare">Mare</option>
+                </select>
+                <p class="articletext"> Alege culori site:</p>
+                <select id="themeOption">
+                    <option value="standard">Standard</option>
+                        <option value="bright">Bright</option>
+                        <option value="dark">Dark</option>
+                </select>
+                <br/>
+                <input id="settingsButton" type="submit" value="Salveaza preferinte">
+            </div>
+
+            <div class=card>
+                <h3 class="articleheader">Anunturile mele</h3>
+                <p>Momentan nu exista anunturi.</p>
+            </div>
+        </div>
+
+
+
+        <div id="tricky">
+            <div class="leftcolumn" id="id_tricky">
+                <div class=card>
+                    <h2 class="articleheader">Tricky</h2>
+                    <p>Tricky este o pisicuta in varsta de aprox. 1 an si cateva luni, deparazitata, vaccinata si sterilizata. Am salvat-o din strada dupa ce aproape ca ne-a implorat sa o luam de acolo si, dupa ce a stat o perioada internata la o clinica
+                        veterinara, o prietena a paginii noastre s-a oferit sa o cazeze temporar. Astfel, in foster s-a obisnuit cu viata la apartament si s-a dovedit a fi o pisicuta foarte prietenoasa, dulce si iubitoare. Acum este pregatita sa ajunga
+                        la casuta ei definitiva si sa-l inveseleasca pe adoptatorul ei in fiecare zi. Se intelege bine cu alte pisicute. O dam doar cu contract de adoptie, la apartament, in Bucuresti.</p>
+                </div>
+            </div>
+            <div id="slider">
+                <ul class="slides">
+                    <li class="slide slide1">
+                        <img src="images/tricky1.jpg" alt="Slide 1">
+                    </li>
+                    <li class="slide slide2">
+                        <img src="images/tricky2.jpg" alt="Slide 2">
+                    </li>
+                    <li class="slide slide3">
+                        <img src="images/tricky3.jpg" alt="Slide 3">
+                    </li>
+                    <li class="slide slide4">
+                        <img src="images/tricky4.jpg" alt="Slide 4">
+                    </li>
+                    <li class="slide slide5">
+                        <img src="images/tricky5.jpg" alt="Slide 5">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="rightcolumn">
+            <div class="card">
+                <a class="link" id="despre-right" onclick="getPage('id_despre-noi')">
+                    <h2 class="articleheader">Despre noi</h2>
+                </a>
+                <div class="imgright">
+                    <img src="images/logo.jpg" alt="logo">
+                    <p id="desprenoi"> Asociatia s-a nascut din iubirea noastra pentru animale si din dorinta de a ajuta cat mai multe dintre ele [..]</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="articleheader">Postari populare</h3>
+                <a class="link" href="http://pisicipecreier.ro/2019/02/13/dora-are-nevoie-de-ajutorul-vostru/" target="_blank">
+                    <div class="imgright zoom">
+                        <img src="images/dora1.jpg" alt="Dora">
+                        <h4 class="popularpost"> Dora are nevoie de ajutorul vostru </h4>
+                        <p class="postdetails">- citeste mai departe -</p>
+                    </div>
+                </a>
+                <a class="link" onclick="getPage('id_tricky')">
+                    <div class="imgright zoom">
+                        <img src="images/tricky1.jpg" alt="Tricky">
+                        <h4 class="popularpost"> Tricky are nevoie de stapan </h4>
+                        <p class="postdetails">- citeste mai departe -</p>
+                    </div>
+                </a>
+                <a class="link" href="https://www.adoptiicaini.ro/erica-blanda-docila-iubitoare/" target="_blank">
+                    <div class="imgright zoom">
+                        <img src="images/erica1.jpg" alt="Erica">
+                        <h4 class="popularpost"> Catelusa Erica vrea un camin iubitor </h4>
+                        <p class="postdetails">- citeste mai departe -</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <h3 class="articleheader">Social</h3>
+                <p class="articletext">Ne gasiti si pe retelele de socializare:</p>
+                <a class="link" href="https://www.facebook.com/pisicipecreier/" target="_blank">
+                    <img class="socialimg zoom" src="images/facebook.jpg" alt="facebook">
+                </a>
+                <a class="link" href="https://www.instagram.com/miaucatcafe/" target="_blank">
+                    <img class="socialimg zoom" src="images/instagram.jpg" alt="instagram">
+                </a>
+            </div>
+            <div id="container2">
+                <img id="animation2" src="images/animation2.gif" alt="animatie">
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <table>
+            <tr>
+                <th>CONTACT</th>
+                <th>SOCIAL</th>
+                <th>PARTENERI</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul id="contactlist">
+                        <li>Email:</li>
+                        <li>adoptdontshop@miau.com</li>
+                        <li>Program:</li>
+                        <li>Luni - Vineri / 9:00 - 18:00</li>
+                        <li>Formular de contact online:</li>
+                        <li>Click <a href="contact.html" class="link">aici</a>.</li>
+                    </ul>
+                </td>
+                <td>
+                    <a href="https://www.facebook.com/pisicipecreier/" target="_blank"><img src="images/facebook2.jpg" alt="facebook" class="socialfooter"></a>
+                    <a href="https://www.instagram.com/miaucatcafe/" target="_blank"><img src="images/instagram2.jpg" alt="instagram" class="socialfooter"></a>
+                </td>
+                <td>
+                    <a href="http://pisicipecreier.ro/" target="_blank"> <img src="images/footerpisici.jpg" alt="Asociatia Pisici pe creier" title="Asociatia Pisici pe Creier" class="partenerifooter"></a>
+                    <a href="http://www.cutu-cutu.ro/" target="_blank"> <img src="images/footercutucutu.jpg" alt="Asociatia Cutu Cutu" title="Asociatia Cutu Cutu" class="partenerifooter"></a>
+                    <a href="http://www.cupisici.ro/" target="_blank"> <img src="images/cupisici.jpg" alt="Cu Pisici" title="Cu Pisici" class="partenerifooter"></a>
+                </td>
+            </tr>
+        </table>
+        <p id="nota">Nota: acest site nu este real. Daca doriti sa adoptati sau sa donati pentru a ajuta animalutete, puteti accesa paginile mentionate la &lt;PARTENERI&gt; .</p>
+    </div>
+
+
+    <script src="script/generatePage.js"></script>
+    <script src="script/CardComponent.js"></script>
+    <script src="script/GridComponent.js"></script>
+    <script src="script/TileComponent.js"></script>
+    <script src="script/RegisterFormValidation.js"></script>
+
+    <script src="script/UserSettings.js"></script>
+    <script src="script/CarouselComponent.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.4/randomColor.js" integrity="sha256-M2r6Q8LKhLE3OlvaHmi69IDLEKSBQ+RQuILS9bNStFY=" crossorigin="anonymous"></script>
+
+
+    <script>
+        function chestie(val, rangeOutput) {
+            rangeOutput.innerHTML = val;
+        }
+    </script>
+
+</body>
+
+</html>

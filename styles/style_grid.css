@@ -1,0 +1,38 @@
+.grid {
+    margin-top: 30px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2.5em;
+    padding: 10px;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.grid>div {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+    border: 1px solid #e8e5e3;
+}
+
+.imggrid {
+    float: none;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.gridtitle {
+    font-size: 75%;
+    margin-top: 5%;
+}
+
+.griddate {
+    font-size: 50%;
+    margin-top: 5%;
+}
+
+#plswork {
+    display: table;
+}

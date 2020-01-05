@@ -1,0 +1,77 @@
+@media screen and (max-height: 800px) {
+    #animation2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #animation1,
+    #animation11,
+    #animation2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+    .headertext {
+        left: 3%;
+        bottom: 6%;
+    }
+    #desprenoi {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .popularpost {
+        font-size: 16px;
+    }
+    .postdetails {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #navbar {
+        position: relative;
+    }
+    .header {
+        margin-top: 10px;
+    }
+    #logo img,
+    #navbar a,
+    #dropdown,
+    #dropdown,
+    #dropbtn,
+    #dropdown-content {
+        float: none;
+        width: 100%;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+    #logo img {
+        height: 75px;
+        width: 75px;
+        padding: 0px;
+        position: relative;
+        left: 50%;
+        transform: translate(-40px);
+    }
+    .headertext {
+        left: 5%;
+        bottom: 0.5%;
+    }
+    .header {
+        display: none;
+    }
+    .grid {
+        grid-template: fit-content(100px) / fit-content(60%);
+        display: block;
+    }
+    .grid>div {
+        margin: 20px;
+    }
+}
