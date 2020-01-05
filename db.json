@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Leanne",
+    "surname":" Graham",
+    "email": "mail1@mail.com",
+    "password":"Pls-mergi1"
+  },
+  {
+    "id": 2,
+    "name": "Ervin",
+    "surname":" Howell",
+    "email": "mail2@mail.com",
+    "password":"Pls-mergi2"
+  },
+  {
+    "id": 3,
+    "name": "Clementine",
+    "surname":"Bauch",
+    "username": "Samantha",
+    "email": "mail3@mail.com",
+    "password":"Pls-mergi3"
+
+  },
+  {
+    "id": 4,
+    "name": "Patricia",
+    "surname":"Lebsack",
+    "email": "mail4@mail.com",
+    "password":"Pls-mergi4"
+  }
+  ]
