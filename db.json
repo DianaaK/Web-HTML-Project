@@ -3,14 +3,14 @@
     "id": 1,
     "name": "Leanne",
     "surname":" Graham",
-    "email": "Sincere@april.biz",
+    "email": "mail1@mail.com",
     "password":"Pls-mergi1"
   },
   {
     "id": 2,
     "name": "Ervin",
     "surname":" Howell",
-    "email": "Shanna@melissa.tv",
+    "email": "mail2@mail.com",
     "password":"Pls-mergi2"
   },
   {
@@ -18,7 +18,7 @@
     "name": "Clementine",
     "surname":"Bauch",
     "username": "Samantha",
-    "email": "Nathan@yesenia.net",
+    "email": "mail3@mail.com",
     "password":"Pls-mergi3"
 
   },
@@ -26,7 +26,7 @@
     "id": 4,
     "name": "Patricia",
     "surname":"Lebsack",
-    "email": "Julianne.OConner@kory.org",
+    "email": "mail4@mail.com",
     "password":"Pls-mergi4"
   }
   ]
